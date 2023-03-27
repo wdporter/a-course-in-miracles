@@ -1,0 +1,8 @@
+{
+	"[html]": {
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 79,
+		"editor.fontFamily": "Calibri",
+		"editor.fontSize": 18,
+	}
+}

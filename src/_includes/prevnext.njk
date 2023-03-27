@@ -1,0 +1,12 @@
+
+{% set siblings = collections.all | eleventyNavigation(eleventyNavigation.parent) %}
+<section class=prevnext>
+{%- for entry in siblings %}
+	{%- if entry.key == eleventyNavigation.prev -%}
+	  <span>← <a href={{ entry.url | url }}>{{ entry.title }}</a></span>
+	{%- endif -%}
+	{%- if entry.key == eleventyNavigation.next -%}
+	  <span style=float:right><a href={{ entry.url | url }}>{{ entry.title }}</a> →</span>
+	{%- endif -%}
+{%- endfor -%}
+</section>

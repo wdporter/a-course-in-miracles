@@ -1,0 +1,21 @@
+{
+	"name": "a-course-in-miracles",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npx @11ty/eleventy --serve",
+		"build": "npx @11ty/eleventy",
+		"clean": "rmdir /s /q _site",
+		"debug": "set DEBUG=Eleventy* & npx @11ty/eleventy"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^1.0.2",
+		"@11ty/eleventy-navigation": "^0.3.5",
+		"lunr": "^2.3.9"
+	}
+}

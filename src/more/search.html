@@ -1,0 +1,116 @@
+---js
+{
+	layout: "content.njk",
+	title: "Search",
+	eleventyNavigation: {
+		key: "Search",
+		title: "Search",
+		parent: "More",
+		order: 2
+	}
+}
+---
+
+
+
+<div style="display:flex; justify-content: space-evenly;">
+<fieldset><legend>Search Term</legend>
+<input type=text id=searchTerm onkeydown="if (event.key == 'Enter') search()">
+<button onclick=search()>Search</button>
+</fieldset>
+
+<fieldset><legend>Volume</legend>
+<input type=checkbox id=textRadio checked data-ref=T />
+<label for=textRadio>Text</label><br>
+<input type=checkbox id=workbookRadio checked  data-ref=W />
+<label for=workbookRadio>Workbook</label><br>
+<input type=checkbox id=manualRadio checked  data-ref=M />
+<label for=manualRadio>Manual</label>
+</fieldset>
+</div>
+
+<div id=result></div>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/assets/search-index.js"></script>
+<script>
+
+	// or one day pre build the index
+	let idx = lunr(function () {
+		this.ref("id")
+		this.field("text")
+		this.metadataWhitelist = ['position']
+
+		documents.forEach(function (doc) {
+			this.add(doc)
+		}, this)
+	})
+
+
+	function search() {
+		console.log(`searching: ${searchTerm.value}`)
+		result.innerHTML = ""
+		var results = idx.search(`text:${searchTerm.value}`)
+
+		const volumes = Array.from(document.querySelectorAll("input[data-ref]"))
+				.filter(c => c.checked)
+				.map(c => c.dataset.ref)
+		results = results.filter(r => volumes.includes(r.ref[0]))
+
+		if (results.length == 0) {
+			result.innerHTML = `We could not find anything for ‘${searchTerm.value}’.`
+			return;
+		}
+		var out = []
+
+		for (var i = 0; i < results.length; ++i) {
+			var item = results[i]
+
+		// not if user doesn't want this volume
+
+
+			// find our document that matches this search result
+			var doc = documents.find(function (doc) {
+				return item.ref === doc.id
+			})
+
+			// add mark tags into the document's body
+			var docFormatted = ""
+			var positions = []
+			Object.keys(item.matchData.metadata).forEach(function(k) {
+				item.matchData.metadata[k].text.position.forEach(p => positions.push(p))
+			})
+			positions.sort(function(a, b) { return a[0] -b[0]} )
+			let previous = 0
+			positions.forEach(p => {
+				docFormatted += doc.text.substring(previous, p[0])
+				docFormatted += "<mark>"
+				docFormatted += doc.text.substring(p[0], p[0] + p[1])
+				docFormatted += "</mark>"
+				previous = p[0] + p[1]
+			})
+			docFormatted += doc.text.substring(previous)
+
+			var searchResultHtml = `<p><a href="${doc.url}">${doc.id}</a>&emsp;${docFormatted} </p>`
+
+			out.push(searchResultHtml)
+		}
+
+		result.innerHTML = out.join("<hr>")
+
+
+	}
+
+
+window.addEventListener("unload", function() {
+	sessionStorage.setItem("searchTerm", document.getElementById("searchTerm").value)
+})
+
+window.addEventListener("load", function() {
+	if (sessionStorage.getItem("term")) {
+		document.getElementById("searchTerm").value = sessionStorage.getItem("searchTerm")
+		search()
+	}
+})
+
+</script>

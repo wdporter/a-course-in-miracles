@@ -1,0 +1,19 @@
+---js
+{
+	layout: "base.njk"
+}
+---
+
+{% include "breadcrumb.njk" %}
+
+<article>
+
+<h2>{{reference}} Lesson {{number}}</h2>
+
+<h3>{{ title }}.</h3>
+
+{{ content | safe }}
+
+</article>
+
+{% include "prevnext.njk" %}
