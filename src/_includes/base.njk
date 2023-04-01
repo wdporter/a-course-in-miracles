@@ -29,24 +29,40 @@
 				<li><a href="/more/">More</a>
 		</ul>
 		</nav>
+		<p><input id=searchText type="search" /> <button id="searchButton">Search</button></p>
 	</header>
 	<main>
 {{ content | safe }}
-
 	</main>
 
 <footer>
+	<p>All quotes are from A Course in Miracles, copyright ©1992, 1999, 2007 by the Foundation for Inner Peace, 448 Ignacio Blvd., #306, Novato, CA 94949, www.acim.org and info@acim.org, used <em>without</em> permission.
 
-<p>All quotes are from A Course in Miracles, copyright ©1992, 1999, 2007 by the Foundation for Inner Peace, 448 Ignacio Blvd., #306, Novato, CA 94949, www.acim.org and info@acim.org, used <em>without</em> permission.
+	<p>Annotations by <a href=mailto:acim@fea.st>W. David Porter</a>. No copyright. {% year %}
 
-<p>Annotations by <a href=mailto:acim@fea.st>W. David Porter</a>. No copyright. {% year %}
+	<p>No ads. No tracking. No donations.
 
-<p>No ads. No tracking. No donations.
-
-<p>Source in <a href=https://github.com/wdporter/a-course-in-miracles>Github</a>. Created with <a href=https://11ty.dev/>Eleventy</a> and <a href=https://newcss.net/>New.css</a>
-
+	<p>Source in <a href=https://github.com/wdporter/a-course-in-miracles>Github</a>. Created with <a href=https://11ty.dev/>Eleventy</a> and <a href=https://newcss.net/>New.css</a>
 
 </footer>
 
+<script>
 
+doSearch = () =>  {
+	window.location.href = `/more/search#${encodeURI(document.getElementById("searchText").value)}`
+}
+
+document.getElementById("searchButton").addEventListener("click", ()=> {
+	doSearch()
+})
+
+document.getElementById("searchText").addEventListener("keyup", (event)=> {
+	console.log(this)
+	console.log(event)
+	if (event.key == "Enter") 
+		doSearch()
+})
+
+
+</script>
 
