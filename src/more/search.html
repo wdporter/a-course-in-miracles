@@ -58,7 +58,7 @@
 		results = results.filter(r => volumes.includes(r.ref[0]))
 
 		if (results.length == 0) {
-			result.innerHTML = `We could not find anything for ‘${searchTerm.value}’.`
+			result.innerHTML = `We could not find anything for “${searchTerm.value}”.`
 			return;
 		}
 		var out = []

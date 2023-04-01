@@ -18,7 +18,7 @@ var documents=
 	{
 		"id": "T-1.II.4",
 		"url": "/text/1-principles-of-miracles/i-revelation-time-and-miracles/#p4",
-		"text": "“No man cometh unto the Father but by me” does not mean that I am in any way separate or different from you except in time, and time does not really exist. The statement is more meaningful in terms of a vertical rather than a horizontal axis. You stand below me and I stand below God. In the process of ‘rising up’, I am higher because without me the distance between God and man would be too great for you to encompass. I bridge the distance as an elder brother to you on the one hand, and as a Son of God on the other. My devotion to my brothers has placed me in charge of the Sonship, which I render complete because I share it. This may appear to contradict the statement “I and my Father are one”, but there are two parts to the statement in recognition that the Father is greater."
+		"text": "“No man cometh unto the Father but by me” does not mean that I am in any way separate or different from you except in time, and time does not really exist. The statement is more meaningful in terms of a vertical rather than a horizontal axis. You stand below me and I stand below God. In the process of “rising up”, I am higher because without me the distance between God and man would be too great for you to encompass. I bridge the distance as an elder brother to you on the one hand, and as a Son of God on the other. My devotion to my brothers has placed me in charge of the Sonship, which I render complete because I share it. This may appear to contradict the statement “I and my Father are one”, but there are two parts to the statement in recognition that the Father is greater."
 	},
 	{
 		"id": "T-1.II.5",
@@ -382,7 +382,7 @@ var documents=
 	{
 		"id": "T-21.VII.3",
 		"url": "/text/21-reason-and-perception/vii-the-last-unanswered-question/#p3",
-		"text": "Frantic and loud and strong the dark ones seem to be. Yet they know not their ‘enemy’, except they hate him. In hatred they have come together, but have not joined each other. For had they done so hatred would be impossible. The army of the powerless must be disbanded in the presence of strength. Those who are strong are never treacherous, because they have no need to dream of power and to act out their dream. How would an army act in dreams? Any way at all. It could be seen attacking anyone with anything. Dreams have no reason in them. A flower turns into a poisoned spear, a child becomes a giant and a mouse roars like a lion. And love is turned to hate as easily. This is no army, but a madhouse. What seems to be a planned attack is bedlam."
+		"text": "Frantic and loud and strong the dark ones seem to be. Yet they know not their “enemy”, except they hate him. In hatred they have come together, but have not joined each other. For had they done so hatred would be impossible. The army of the powerless must be disbanded in the presence of strength. Those who are strong are never treacherous, because they have no need to dream of power and to act out their dream. How would an army act in dreams? Any way at all. It could be seen attacking anyone with anything. Dreams have no reason in them. A flower turns into a poisoned spear, a child becomes a giant and a mouse roars like a lion. And love is turned to hate as easily. This is no army, but a madhouse. What seems to be a planned attack is bedlam."
 	},
 	{
 		"id": "T-21.VII.4",
@@ -417,7 +417,7 @@ var documents=
 	{
 		"id": "T-21.VII.10",
 		"url": "/text/21-reason-and-perception/vii-the-last-unanswered-question/#p10",
-		"text": "Why is the final question so important? Reason will tell you why. It is the same as are the other three, except in time. The others are decisions that can be made, and then unmade and made again. But truth is constant, and implies a state where vacillations are impossible. You can desire a world you rule that rules you not, and change your mind. You can desire to exchange your helplessness for power, and lose this same desire as a little glint of sin attracts you. And you can want to see a sinless world, and let an ‘enemy’ tempt you to use the body’s eyes and change what you desire."
+		"text": "Why is the final question so important? Reason will tell you why. It is the same as are the other three, except in time. The others are decisions that can be made, and then unmade and made again. But truth is constant, and implies a state where vacillations are impossible. You can desire a world you rule that rules you not, and change your mind. You can desire to exchange your helplessness for power, and lose this same desire as a little glint of sin attracts you. And you can want to see a sinless world, and let an “enemy” tempt you to use the body’s eyes and change what you desire."
 	},
 	{
 		"id": "T-21.VII.11",
@@ -561,7 +561,7 @@ var documents=
 	{
 		"id": "T-24.VII.10",
 		"url": "/text/24-the-goal-of-specialness/vii-the-meeting-place/#p10",
-		"text": "Thus is the body made a theory of yourself, with no provisions made for evidence beyond itself, and no escape within its sight. Its course is sure, when seen through its own eyes. It grows and withers, flourishes and dies. And you cannot conceive of you apart from it. You brand it sinful and you hate its acts, judging it evil. Yet your specialness whispers, “Here is my own beloved son, in whom I am well pleased.” Thus does the ‘son’ become the means to serve his ‘father’s’ purpose. Not identical, not even like, but still a means to offer to the ‘father’ what he wants. Such is the travesty on God’s creation. For as His Son’s creation gave Him joy and witness to His Love and shared His purpose, so does the body testify to the idea that made it, and speak for its reality and truth."
+		"text": "Thus is the body made a theory of yourself, with no provisions made for evidence beyond itself, and no escape within its sight. Its course is sure, when seen through its own eyes. It grows and withers, flourishes and dies. And you cannot conceive of you apart from it. You brand it sinful and you hate its acts, judging it evil. Yet your specialness whispers, “Here is my own beloved son, in whom I am well pleased.” Thus does the “son” become the means to serve his “father’s” purpose. Not identical, not even like, but still a means to offer to the “father” what he wants. Such is the travesty on God’s creation. For as His Son’s creation gave Him joy and witness to His Love and shared His purpose, so does the body testify to the idea that made it, and speak for its reality and truth."
 	}, 
 	{
 		"id": "T-24.VII.11",
