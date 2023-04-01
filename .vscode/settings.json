@@ -4,5 +4,14 @@
 		"editor.wordWrapColumn": 79,
 		"editor.fontFamily": "Calibri",
 		"editor.fontSize": 18,
-	}
+	},
+	"spellright.language": [
+		"en"
+	],
+	"spellright.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext",
+		"html"
+	]
 }
